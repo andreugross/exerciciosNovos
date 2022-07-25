@@ -61,4 +61,4 @@ const books = [
     },
 ];
 
-module.exports = 'libraries';
+module.exports = books;

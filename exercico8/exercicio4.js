@@ -1,4 +1,4 @@
-const libraries = require("./libraries");
+const books = require("./libraries");
 
 //4 - Ordene os livros por data de lançamento em ordem decrescente.
 const booksOrderedByReleaseYearDesc = () => {
@@ -9,5 +9,8 @@ const booksOrderedByReleaseYearDesc = () => {
             return true;
         }
     });
+    orderBooks.reverse();
     return orderBooks;
 };
+
+console.log(booksOrderedByReleaseYearDesc(books));
